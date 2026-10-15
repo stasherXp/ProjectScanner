@@ -1,0 +1,33 @@
+# --- ProjectScanner runtime ---
+logs/
+scanner.db
+scanner.db-wal
+scanner.db-shm
+
+# --- BigScan runtime ---
+BigScan/db/*.db
+BigScan/db/*.db-wal
+BigScan/db/*.db-shm
+BigScan/db/.last
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- venv ---
+.venv/
+venv/
+env/
+
+# --- Backups (patch .bat складывает сюда) ---
+backups/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
