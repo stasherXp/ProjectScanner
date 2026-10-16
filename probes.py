@@ -2,10 +2,11 @@
 # Патч v2.4: Edge теперь парсится (передаётся весь вывод)
 import shutil
 import subprocess
+import sys
 
 APPS = [
-    ("Python",          ["python", "--version"]),
-    ("pip",             ["python", "-m", "pip", "--version"]),
+    ("Python",          [sys.executable, "--version"]),
+    ("pip",             [sys.executable, "-m", "pip", "--version"]),
     ("Git",             ["git", "--version"]),
     ("Node.js",         ["node", "--version"]),
     ("npm",             ["npm", "--version"]),
